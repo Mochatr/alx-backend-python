@@ -6,7 +6,7 @@
 from typing import List, Tuple, Any
 
 
-def element_length(lst: list[Any]) -> List[Tuple[Any, int]]:
+def element_length(lst: List[Any]) -> List[Tuple[Any, int]]:
     """
     Takes a list of items that support the len() function
     and returns a list of tuples,
