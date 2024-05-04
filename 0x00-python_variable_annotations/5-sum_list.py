@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Define sum_list function"""
 
+from typing import List
 
-def sum_list(input_list: list[float]) -> float:
+
+def sum_list(float_list: List[float]) -> float:
     """
     Returns the sum of a list of float.
 
@@ -12,4 +14,4 @@ def sum_list(input_list: list[float]) -> float:
     Returns:
       float: the sum of a list of float.
     """
-    return sum(input_list)
+    return float(sum(float_list)
