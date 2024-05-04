@@ -3,10 +3,12 @@
    and return values with the appropriate types
 """
 
-from typing import List, Tuple, Any
+from typing import Iterable, Sequence, List, Tuple
+
+i = iterable[Sequence]
 
 
-def element_length(lst: List[Any]) -> List[Tuple[Any, int]]:
+def element_length(lst: iterable) -> List[Tuple[Sequence, int]]:
     """
     Takes a list of items that support the len() function
     and returns a list of tuples,
