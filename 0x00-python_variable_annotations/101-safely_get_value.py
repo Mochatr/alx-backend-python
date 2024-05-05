@@ -8,7 +8,7 @@ K = TypeVar('K')
 V = TypeVar('V')
 
 
-def safely_get_value(dct: Dict[k, v], key: K, default: Optional[V] = None) -> Optional[V]:
+def safely_get_value(dct: Dict[K, V], key: K, default: Optional[V] = None) -> Optional[V]:
     """
     Return the value associated with the key in the dictionary
     or the default value.
