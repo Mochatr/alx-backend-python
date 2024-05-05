@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Define safely_get_value function"""
 
-from typing import Dict, TypeVar, Optional
+from typing import TypeVar, Dict, Optional
 
 
 K = TypeVar('K')
