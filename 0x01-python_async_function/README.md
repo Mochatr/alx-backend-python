@@ -1,6 +1,6 @@
 # Async IO in Python Project
 
-<img src=https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/4aeaa9c3cb1f316c05c4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240506%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240506T115320Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=97850855ecaa33a1e5fd61dae003a768a3fe8646545542d6a01317b3b1585e22>
+<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/4aeaa9c3cb1f316c05c4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240506%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240506T115320Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=97850855ecaa33a1e5fd61dae003a768a3fe8646545542d6a01317b3b1585e22">
 
 ## Resources
 
