@@ -6,7 +6,7 @@ from typing import List
 from wait_random import wait_random
 
 
-async def wait_n(n: int max_delay: int) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     An Asynchronous routine that spawns wait_random n times
     with specified max_delay.
