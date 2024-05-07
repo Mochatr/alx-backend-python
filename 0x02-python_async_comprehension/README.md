@@ -1,6 +1,6 @@
 # Python Async Comprehension
 
-![Python comprehension](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/ee85b9f67c384e29525b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240507%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240507T120433Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=569daba8964f480062efd8a4a9c32cc7d946251ff062c8414a491c03bf4ac4db)
+<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/ee85b9f67c384e29525b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240507%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240507T120433Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=569daba8964f480062efd8a4a9c32cc7d946251ff062c8414a491c03bf4ac4db" alt="Python async comprehension">
 
 This project explores the use of asynchronous comprehensions and generators in Python, based on PEP 530. It aims to demonstrate the creation of asynchronous generators, the use of async comprehensions, and the application of type annotations to generators.
 
