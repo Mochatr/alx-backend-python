@@ -27,7 +27,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         result = await future
         results.append(result)
 
-    return result
+    return results
 
 if __name__ == "__main__":
     import sys
