@@ -3,18 +3,18 @@
 
 
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch, Mock
 from parameterized import parameterized_class
 from client import GithubOrgClient
-from fixtures import org_payload, repos_payload, expected_repos, apache2_repos
+from fixtures import TEST_PAYLOAD
 
 
 @parameterized_class([
     {
-        "org_payload": org_payload,
-        "repos_payload": repos_payload,
-        "expected_repos": expected_repos,
-        "apache2_repos": apache2_repos
+        "org_payload": TEST_PAYLOAD[0][0],
+        "repos_payload": TEST_PAYLOAD[0][1],
+        "expected_repos": TEST_PAYLOAD[0][2],
+        "apache2_repos": TEST_PAYLOAD[0][3],
     }
 ])
 class TestIntegrationGithubOrgClient(unittest.TestCase):
@@ -27,13 +27,13 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         cls.mock_get = cls.get_patcher.start()
 
         def get_json(url):
-            if url == "https://api.github.com/orgs/test_org":
-                return cls.org_payload
-            if url == "https://api.github.com/orgs/test_org/repos":
+            if url == cls.org_payload["repos_url"]:
                 return cls.repos_payload
-            return None
+            if url == "https://api.github.com/orgs/google":
+                return cls.org_payload
+            return Mock(json=lambda: None)
 
-        cls.mock_get.return_value.json.side_effect = get_json
+        cls.mock_get.side_effect = lambda url: Mock(json=lambda: get_json(url))
 
     @classmethod
     def tearDownClass(cls):
@@ -45,7 +45,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         Test public_repos method returns
         repositories with a specific license.
         """
-        client = GithubOrgClient("test_org")
+        client = GithubOrgClient("google")
         self.assertEqual(client.public_repos("apache-2.0"), self.apache2_repos)
 
 
