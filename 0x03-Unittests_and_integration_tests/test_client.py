@@ -48,6 +48,14 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         client = GithubOrgClient("google")
         self.assertEqual(client.public_repos("apache-2.0"), self.apache2_repos)
 
+    def test_public_repos_with_licence(self):
+        """
+        Test public_repos method returns repositories
+        with a specific licence
+        """
+        client = GithubOrgClient("google")
+        self.assertEqual(client.public_repos("apache-2.0"), self.apache2_repos)
+
 
 if __name__ == "__main__":
     unittest.main()
